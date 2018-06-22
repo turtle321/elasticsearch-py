@@ -11,7 +11,7 @@ to be installed.
 
 For example to use the ``requests``-based connection just import it and use it::
 
-    from elasticsearch import Elasticsearch, RequestsHttpConnection
+    from elasticsearch6 import Elasticsearch, RequestsHttpConnection
     es = Elasticsearch(connection_class=RequestsHttpConnection)
 
 The default connection class is based on ``urllib3`` which is more performant

@@ -157,7 +157,7 @@ class Elasticsearch(object):
     is used to encode all outgoing requests.
     However, you can implement your own custom serializer::
     
-        from elasticsearch.serializer import JSONSerializer
+        from elasticsearch6.serializer import JSONSerializer
 
         class SetEncoder(JSONSerializer):
             def default(self, obj):
@@ -1339,7 +1339,7 @@ class Elasticsearch(object):
     @query_params()
     def delete_script(self, id, params=None):
         """
-        Remove a stored script from elasticsearch.
+        Remove a stored script from elasticsearch6.
         `<http://www.elastic.co/guide/en/elasticsearch/reference/master/modules-scripting.html>`_
 
         :arg id: Script ID
